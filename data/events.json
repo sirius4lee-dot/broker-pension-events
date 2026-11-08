@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08 23:05",
+ "updated": "2026-11-08 23:08",
  "events": [
   {
    "broker": "KB증권",
@@ -67,6 +67,34 @@
    "category": "",
    "source": "공식",
    "key": "신한투자증권|퇴직연금로보자동투자이벤트",
+   "kind": "IRP·퇴직연금",
+   "first_seen": "2026-11-08",
+   "stale": false
+  },
+  {
+   "broker": "한국투자증권",
+   "title": "뱅키스 ISA중개형과 함께 금(金)빛 내일 시작!",
+   "url": "https://securities.koreainvestment.com/main/customer/notice/Event.jsp?gubun=i",
+   "start": "2026-10-01",
+   "end": "2026-11-30",
+   "desc": "최대 100만원 혜택기회!!",
+   "category": "",
+   "source": "공식",
+   "key": "한국투자증권|뱅키스ISA중개형과함께금빛내일시작",
+   "kind": "ISA",
+   "first_seen": "2026-11-08",
+   "stale": false
+  },
+  {
+   "broker": "한국투자증권",
+   "title": "퇴직연금 개인투자용 국채 매수 이벤트",
+   "url": "https://securities.koreainvestment.com/main/customer/notice/Event.jsp?gubun=i",
+   "start": "2026-10-01",
+   "end": "2026-11-30",
+   "desc": "10만원 이상 선택형 상품권 1만원 혜택!!",
+   "category": "",
+   "source": "공식",
+   "key": "한국투자증권|퇴직연금개인투자용국채매수이벤트",
    "kind": "IRP·퇴직연금",
    "first_seen": "2026-11-08",
    "stale": false
@@ -506,6 +534,90 @@
    "stale": false
   },
   {
+   "broker": "한국투자증권",
+   "title": "개인연금 대고객 이벤트",
+   "url": "https://securities.koreainvestment.com/main/customer/notice/Event.jsp?gubun=i",
+   "start": "2026-10-01",
+   "end": "2026-12-31",
+   "desc": "연금자산 옮기고, 혜택도 챙기자!",
+   "category": "",
+   "source": "공식",
+   "key": "한국투자증권|개인연금대고객이벤트",
+   "kind": "연금저축",
+   "first_seen": "2026-11-08",
+   "stale": false
+  },
+  {
+   "broker": "한국투자증권",
+   "title": "IRP 대고객 이벤트",
+   "url": "https://securities.koreainvestment.com/main/customer/notice/Event.jsp?gubun=i",
+   "start": "2026-10-01",
+   "end": "2026-12-31",
+   "desc": "확실하게 IRP! 세액공제는 한투!",
+   "category": "",
+   "source": "공식",
+   "key": "한국투자증권|IRP대고객이벤트",
+   "kind": "IRP·퇴직연금",
+   "first_seen": "2026-11-08",
+   "stale": false
+  },
+  {
+   "broker": "한국투자증권",
+   "title": "개인연금 운용사 ETF 매수 이벤트",
+   "url": "https://securities.koreainvestment.com/main/customer/notice/Event.jsp?gubun=i",
+   "start": "2026-10-01",
+   "end": "2026-12-31",
+   "desc": "모바일 문화상품권 최대 3만원 혜택!!",
+   "category": "",
+   "source": "공식",
+   "key": "한국투자증권|개인연금운용사ETF매수이벤트",
+   "kind": "연금저축",
+   "first_seen": "2026-11-08",
+   "stale": false
+  },
+  {
+   "broker": "한국투자증권",
+   "title": "퇴직연금 운용사 ETF 매수 이벤트",
+   "url": "https://securities.koreainvestment.com/main/customer/notice/Event.jsp?gubun=i",
+   "start": "2026-10-01",
+   "end": "2026-12-31",
+   "desc": "모바일 문화상품권 최대 3만원 혜택!!",
+   "category": "",
+   "source": "공식",
+   "key": "한국투자증권|퇴직연금운용사ETF매수이벤트",
+   "kind": "IRP·퇴직연금",
+   "first_seen": "2026-11-08",
+   "stale": false
+  },
+  {
+   "broker": "한국투자증권",
+   "title": "퇴직연금 DC 신규 입금 이벤트",
+   "url": "https://securities.koreainvestment.com/main/customer/notice/Event.jsp?gubun=i",
+   "start": "2026-10-01",
+   "end": "2026-12-31",
+   "desc": "DC 신규 입금하면 3만원 100% 증정혜택!!",
+   "category": "",
+   "source": "공식",
+   "key": "한국투자증권|퇴직연금DC신규입금이벤트",
+   "kind": "IRP·퇴직연금",
+   "first_seen": "2026-11-08",
+   "stale": false
+  },
+  {
+   "broker": "한국투자증권",
+   "title": "연금저축 온라인 매매수수료 우대 이벤트",
+   "url": "https://securities.koreainvestment.com/main/customer/notice/Event.jsp?gubun=i",
+   "start": "2024-12-20",
+   "end": "2026-12-31",
+   "desc": "수수료 우대로 든든하니깐 ~ 연금저축 온라인 매매수수료 우대 혜택받아가세요~!",
+   "category": "",
+   "source": "공식",
+   "key": "한국투자증권|연금저축온라인매매수수료우대이벤트",
+   "kind": "연금저축",
+   "first_seen": "2026-11-08",
+   "stale": false
+  },
+  {
    "broker": "NH투자증권",
    "title": "퇴직연금 DC 신규가입 이벤트(2026.10.01~2027.01.31)",
    "url": "https://www.nhsec.com/guestGuide/ctmList/eventIngList.action",
@@ -590,6 +702,20 @@
    "stale": false
   },
   {
+   "broker": "한국투자증권",
+   "title": "ISA중개형 온라인 매매수수료 평생우대",
+   "url": "https://securities.koreainvestment.com/main/customer/notice/Event.jsp?gubun=i",
+   "start": "2026-06-19",
+   "end": "2027-05-31",
+   "desc": "온라인 국내주식 매매수수료 평생우대 + 공모주 청약 200% 우대혜택 받아가세요 ~!!",
+   "category": "",
+   "source": "공식",
+   "key": "한국투자증권|ISA중개형온라인매매수수료평생우대",
+   "kind": "ISA",
+   "first_seen": "2026-11-08",
+   "stale": false
+  },
+  {
    "broker": "KB증권",
    "title": "IRP 무료 수수료 혜택 이벤트",
    "url": "https://www.kbsec.com/go.able?linkcd=m06090002",
@@ -618,9 +744,7 @@
    "stale": false
   }
  ],
- "failures": {
-  "한국투자증권": "Error: Page.goto: net::ERR_TIMED_OUT at https://securities.koreainvestment.com/main/customer/notice/Event.jsp?gubun=i&cmd=TF04gb010001&currentPage=3\nCall log"
- },
+ "failures": {},
  "totals": {
   "미래에셋증권": 11,
   "삼성증권": 14,
@@ -630,7 +754,8 @@
   "신한투자증권": 13,
   "토스증권": 0,
   "하나증권": 10,
-  "대신증권": 20
+  "대신증권": 20,
+  "한국투자증권": 20
  },
  "sources": {
   "미래에셋증권": "https://securities.miraeasset.com/hki/hki7000/r05.do",
