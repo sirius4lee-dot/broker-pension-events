@@ -24,7 +24,13 @@ def kis(b: Browser):
     out = []
     for p in range(1, 8):
         url = f"{base}?gubun=i&cmd=TF04gb010001&currentPage={p}"
-        evs = parse_lines(clean_lines(b.page_text(url, wait_ms=1500)), "한국투자증권", base + "?gubun=i", before=2)
+        try:
+            text = b.page_text(url, wait_ms=1500)
+        except Exception:
+            if p == 1:
+                raise
+            break  # 뒤 페이지 실패는 이미 받은 것만 사용 (Actions에서 빈 3페이지가 타임아웃난 적 있음)
+        evs = parse_lines(clean_lines(text), "한국투자증권", base + "?gubun=i", before=2)
         new = [e for e in evs if e.key not in {o.key for o in out}]
         if not new:
             break

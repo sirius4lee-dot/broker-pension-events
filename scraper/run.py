@@ -41,9 +41,9 @@ def collect(only: list[str] | None):
                 continue
             try:
                 evs = fn(b)
-                totals[name] = len(evs)
                 if not evs and name != "토스증권":
                     raise RuntimeError("이벤트 0건 — 페이지 구조가 바뀌었을 수 있음")
+                totals[name] = len(evs)
                 keep = []
                 for e in evs:
                     cat = pension_category(e)
@@ -70,13 +70,15 @@ def merge(prev: dict, results: dict, failures: dict, only):
     events, new, ended = [], [], []
     for name in SITES:
         if name in results:
+            # 이전에 한 번도 성공 못 한 증권사는 첫 수집 → 전부 '신규'로 띄우지 않음
+            broker_first = first_run or name not in prev.get("totals", {})
             cur_keys = set()
             for e in results[name]:
                 cur_keys.add(e["key"])
                 old = prev_events.get(e["key"])
                 e["first_seen"] = old["first_seen"] if old else today
                 e["stale"] = False
-                if not old and not first_run:
+                if not old and not broker_first:
                     new.append(e)
                 events.append(e)
             ended += [p for k, p in prev_events.items()
@@ -154,6 +156,7 @@ def main():
     events, new, ended, first_run = merge(prev, results, failures, only)
     events.sort(key=lambda e: (e.get("end") or "9999", e["broker"]))
     now = datetime.now(KST).strftime("%Y-%m-%d %H:%M")
+    totals = {**prev.get("totals", {}), **totals}  # --only 실행 때도 이전 성공 기록 유지
     state = {"updated": now, "events": events, "failures": failures, "totals": totals,
              "sources": SITE_HOME}
 

@@ -164,7 +164,11 @@ class Browser:
                                         viewport={"width": 1400, "height": 1000})
         try:
             page = ctx.new_page()
-            page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            try:
+                page.goto(url, wait_until="domcontentloaded", timeout=45000)
+            except Exception:
+                page.wait_for_timeout(3000)  # 일시적 타임아웃이면 한 번 더
+                page.goto(url, wait_until="domcontentloaded", timeout=45000)
             try:
                 page.wait_for_load_state("networkidle", timeout=15000)
             except Exception:
